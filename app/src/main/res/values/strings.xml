@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">yaojinpet</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="contact">联系人</string>
+    <string name="music">音乐</string>
+    <string name="pet">宠物</string>
+    <string name="note">记事本</string>
+    <string name="communicate">Communicate</string>
+    <string name="_0_00">0:00</string>
+    <string name="_4_12">4:12</string>
+    <string name="play">PLAY</string>
+    <string name="stop">STOP</string>
+    <string name="quit">QUIT</string>
+    <string name="music_imge">music_imge</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="square">广场</string>
+    <string name="register">登录</string>
+    <string name="registercode">获取验证码</string>
+    <string name="PLAY">PLAY</string>
+    <string name="Stopped">Stopped</string>
+    <string name="mmss">"mm:ss "</string>
+    <string name="Paused">Paused</string>
+    <string name="PAUSE">PAUSE</string>
+    <string name="playing">Playing</string>
+    <string name="Playing">Playing</string>
+    <string name="conservation">会话</string>
+    <string name="user_information">用户信息</string>
+    <string name="logout">logout</string>
+    <string name="nani">nani</string>
+    <string name="closeFloatWindow">关闭悬浮窗</string>
+    <string name="back">返回</string>
+    <string name="headicon">headIcon</string>
+    <string name="android_studio">Android Studio</string>
+    <string name="android_studio_android_com">android.studio@android.com</string>
+    <string name="last">LAST</string>
+    <string name="next">NEXT</string>
+    <string name="allMusic">所有歌曲</string>
+    <string name="telephoneNum">电话号码</string>
+    <string name="lastsong">上一首歌</string>
+    <string name="nextsong">下一首歌</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="speedSlower">音速-</string>
+    <string name="start">开始</string>
+    <string name="speedFaster">音速+</string>
+    <string name="cycle">循环</string>
+
+</resources>

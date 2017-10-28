@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".Yaojinpet">
+    <com.example.myapplication.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        sothree:umanoFadeColor="@android:color/transparent"
+        sothree:umanoPanelHeight="128dp"
+        sothree:umanoShadowHeight="4dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.myapplication.musicPlayer.InterceptorFrameLayout
+            android:id="@+id/InterceptorFrameLayout"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/id_viewpager"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp"
+                />
+
+            <com.example.myapplication.musicPlayer.StereoView
+                android:id="@+id/stereoView"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="50dp"
+                android:visibility="gone">
+
+            </com.example.myapplication.musicPlayer.StereoView>
+
+        </com.example.myapplication.musicPlayer.InterceptorFrameLayout>
+
+        <ListView
+            android:background="@android:color/transparent"
+            android:id="@+id/musicListView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:gravity="center|bottom"
+        android:background="@drawable/music_controls_background"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.example.myapplication.musicPlayer.LrcView
+            xmlns:lrc="http://schemas.android.com/apk/res/com.example.myapplication"
+            android:id="@+id/lrcView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            lrc:textSize="18sp"
+            lrc:normalTextColor="@android:color/white"
+            lrc:currentTextColor="@color/main"
+            lrc:dividerHeight="20dp"
+            lrc:rows="9"
+            />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_00"
+            android:layout_alignParentTop="true"/>
+
+        <SeekBar
+            android:layout_below="@id/start"
+            android:progressDrawable="@xml/bg_bar"
+            android:thumb="@xml/thumb_bar"
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignEnd="@id/progress"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0_00"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:contentDescription="@string/lastsong"
+            android:id="@+id/lastsong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/music_last_song"
+            android:layout_marginEnd="20dp"/>
+        <ImageButton
+            android:contentDescription="@string/play"
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/music_play"
+            android:layout_marginEnd="20dp"/>
+        <ImageButton
+            android:contentDescription="@string/nextsong"
+            android:id="@+id/nextsong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/music_next_song"
+            />
+    </LinearLayout>
+    </LinearLayout>
+    </com.example.myapplication.slidinguppanel.SlidingUpPanelLayout>
+
+
+</LinearLayout>

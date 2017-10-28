@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:visible="false"
+            android:id="@+id/nav_user_information"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/user_information" />
+        <item
+            android:id="@+id/nav_music"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/music" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_pet"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/pet" />
+        <item
+            android:visible="false"
+            android:id="@+id/nav_note"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/note" />
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/contact" />
+            <item
+                android:id="@+id/nav_conservation"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/conservation" />
+        </menu>
+    </item>
+
+</menu>

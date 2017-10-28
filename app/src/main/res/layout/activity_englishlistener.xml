@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:visibility="gone"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:id="@+id/EnglishWord"/>
+    <ListView
+        android:id="@+id/word_listview"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:background="@color/lcim_bottom_bar_text_black"
+        />
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/speakControl"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/ListenerSlower"
+            android:text="@string/speedSlower"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <Button
+
+            android:id="@+id/startListener"
+            android:text="@string/start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+           />
+        <Button
+
+            android:id="@+id/ListenerFaster"
+            android:text="@string/speedFaster"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <Button
+
+            android:id="@+id/cycle"
+            android:text="@string/cycle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>
