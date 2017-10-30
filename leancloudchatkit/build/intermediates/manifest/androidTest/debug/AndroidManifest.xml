@@ -4,7 +4,7 @@
 
     <uses-sdk
         android:minSdkVersion="19"
-        android:targetSdkVersion="26" />
+        android:targetSdkVersion="25" />
 
     <instrumentation
         android:name="android.test.InstrumentationTestRunner"
@@ -21,10 +21,6 @@
     <uses-permission android:name="android.permission.READ_LOGS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.VIBRATE" />
-
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="26.0.0-alpha1" />
 
     <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
@@ -48,6 +44,10 @@
         </receiver>
 
         <service android:name="com.avos.avoscloud.PushService" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="25.4.0" />
     </application>
 
 </manifest>

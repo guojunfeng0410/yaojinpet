@@ -15,6 +15,8 @@ import com.example.myapplication.slidemenu.MainActivity;
 import com.example.myapplication.voice.Voice;
 
 
+import org.androidannotations.annotations.EActivity;
+
 import java.io.File;
 
 import cn.leancloud.chatkit.LCChatKit;
@@ -23,6 +25,7 @@ import cn.leancloud.chatkit.LCChatKit;
  * liteplayer by loader
  * @author qibin
  */
+@EActivity(R.layout.splash_layout)
 public class SplashActivity extends Activity {
     String APP_KEY = "zJMeI9BKMScfD1wLeRiUwbnH";
     String APP_ID = "DYWs0volshC8a6jlt6VA90D5-gzGzoHsz";
@@ -34,7 +37,6 @@ public class SplashActivity extends Activity {
         // 全屏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.splash_layout);
         // 开启播放和下载服务
 
         Voice voice=new Voice(getApplicationContext(),true);

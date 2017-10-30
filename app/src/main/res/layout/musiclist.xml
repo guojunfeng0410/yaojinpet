@@ -7,7 +7,6 @@
     android:layout_margin="6sp"
     tools:context=".Yaojinpet">
 <TextView
-    android:textColor="@color/lcim_common_blue"
     android:maxLines="1"
     android:textSize="30sp"
     android:id="@+id/musicName"

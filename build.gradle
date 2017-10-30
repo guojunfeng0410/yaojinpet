@@ -3,10 +3,6 @@
 buildscript {
     repositories {
         jcenter()
-        // 这里是 LeanCloud 的包仓库
-        maven {
-            url "http://mvn.leancloud.cn/nexus/content/repositories/public"
-        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
@@ -19,14 +15,13 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        // 这里是 LeanCloud 的包仓库
-        maven {
-            url "http://mvn.leancloud.cn/nexus/content/repositories/public"
-        }
-
+        maven { url "https://maven.google.com" }
     }
 }
 
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+
+

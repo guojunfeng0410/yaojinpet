@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 25
     buildToolsVersion "26.0.2"
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 25
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,23 +30,29 @@ repositories {
     }
     maven { url 'https://jitpack.io' }
 }
+
+apply plugin: 'com.android.application'
+
+def AAVersion = '4.3.1'
 dependencies {
-    compile project(':leancloudchatkit')
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile 'com.android.support:appcompat-v7:26+'
-    compile 'com.android.support:design:26+'
+    compile 'com.android.support:appcompat-v7:25.4.0'
+    compile 'com.android.support:design:25.4.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/gson-1.5.jar')
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
     compile files('libs/log4j-1.2.15.jar')
-    compile 'com.android.support:support-v4:26+'
+    compile 'com.android.support:support-v4:25.4.0'
     compile files('libs/VoiceRecognition-2.1.20.jar')
     /////////侧边栏///////////////////////////
     compile 'com.github.yalantis:Side-Menu.Android:1.0.1'
     compile 'com.github.ozodrukh:CircularReveal:1.0.4'
     compile 'com.github.tdscientist:ShelfView:v1.0'
+
+    annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
 }

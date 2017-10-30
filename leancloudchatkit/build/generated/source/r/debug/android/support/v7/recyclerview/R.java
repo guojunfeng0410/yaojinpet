@@ -8,39 +8,26 @@ package android.support.v7.recyclerview;
 
 public final class R {
     public static final class attr {
-        public static int fastScrollEnabled = 0x7f040069;
-        public static int fastScrollHorizontalThumbDrawable = 0x7f04006a;
-        public static int fastScrollHorizontalTrackDrawable = 0x7f04006b;
-        public static int fastScrollVerticalThumbDrawable = 0x7f04006c;
-        public static int fastScrollVerticalTrackDrawable = 0x7f04006d;
-        public static int layoutManager = 0x7f04007c;
-        public static int reverseLayout = 0x7f0400a5;
-        public static int spanCount = 0x7f0400b1;
-        public static int stackFromEnd = 0x7f0400b7;
+        public static int layoutManager = 0x7f040076;
+        public static int reverseLayout = 0x7f04009f;
+        public static int spanCount = 0x7f0400ab;
+        public static int stackFromEnd = 0x7f0400b1;
     }
     public static final class dimen {
-        public static int fastscroll_default_thickness = 0x7f08004d;
-        public static int fastscroll_margin = 0x7f08004e;
-        public static int fastscroll_minimum_range = 0x7f08004f;
-        public static int item_touch_helper_max_drag_scroll_per_frame = 0x7f080057;
-        public static int item_touch_helper_swipe_escape_max_velocity = 0x7f080058;
-        public static int item_touch_helper_swipe_escape_velocity = 0x7f080059;
+        public static int item_touch_helper_max_drag_scroll_per_frame = 0x7f080054;
+        public static int item_touch_helper_swipe_escape_max_velocity = 0x7f080055;
+        public static int item_touch_helper_swipe_escape_velocity = 0x7f080056;
     }
     public static final class id {
         public static int item_touch_helper_previous_elevation = 0x7f0c0061;
     }
     public static final class styleable {
-        public static int[] RecyclerView = { 0x010100f1, 0x010100c4, 0x7f040069, 0x7f04006a, 0x7f04006b, 0x7f04006c, 0x7f04006d, 0x7f04007c, 0x7f0400a5, 0x7f0400b1, 0x7f0400b7 };
+        public static int[] RecyclerView = { 0x010100f1, 0x010100c4, 0x7f040076, 0x7f04009f, 0x7f0400ab, 0x7f0400b1 };
         public static int RecyclerView_android_descendantFocusability = 0;
         public static int RecyclerView_android_orientation = 1;
-        public static int RecyclerView_fastScrollEnabled = 2;
-        public static int RecyclerView_fastScrollHorizontalThumbDrawable = 3;
-        public static int RecyclerView_fastScrollHorizontalTrackDrawable = 4;
-        public static int RecyclerView_fastScrollVerticalThumbDrawable = 5;
-        public static int RecyclerView_fastScrollVerticalTrackDrawable = 6;
-        public static int RecyclerView_layoutManager = 7;
-        public static int RecyclerView_reverseLayout = 8;
-        public static int RecyclerView_spanCount = 9;
-        public static int RecyclerView_stackFromEnd = 10;
+        public static int RecyclerView_layoutManager = 2;
+        public static int RecyclerView_reverseLayout = 3;
+        public static int RecyclerView_spanCount = 4;
+        public static int RecyclerView_stackFromEnd = 5;
     }
 }
